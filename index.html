@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZAMXS | OBLIVION HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div id="login-screen" class="cyber-panel">
+        <h1>ZAMXS ACCESS CONTROL</h1>
+        <p style="text-align:center">CONTACT OWNER FOR CREDENTIALS</p>
+        <input type="text" id="user" placeholder="ID">
+        <input type="password" id="pass" placeholder="KEY">
+        <button onclick="auth()">INITIALIZE</button>
+    </div>
+
+    <div id="main-hub" class="hidden">
+        <h1>OBLIVION MULTI-TOOL v2</h1>
+        
+        <div class="cyber-panel">
+            <h3>MP3 DOWNLOADER (YT/TT)</h3>
+            <input type="text" id="dl-url" placeholder="Paste Link Here...">
+            <button onclick="alert('Redirecting to API Gateway...')">EXTRACT MP3</button>
+        </div>
+
+        <div class="cyber-panel">
+            <h3>QR GENERATOR (REAL)</h3>
+            <input type="text" id="qr-text" placeholder="Text/Link inside QR">
+            <button onclick="generateQR()">GENERATE BYTES</button>
+            <div id="qr-result" style="text-align:center"></div>
+        </div>
+
+        <div class="cyber-panel">
+            <h3>SOURCE CODE EXTRACTOR (HTML/JS/CSS)</h3>
+            <input type="text" id="target-url" placeholder="https://top4top.io/">
+            <button onclick="fetchSource()">FETCH DATA</button>
+            <p id="status-fetch"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
