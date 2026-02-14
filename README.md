@@ -1,2 +1,0 @@
-# Wou
-JavaScript
